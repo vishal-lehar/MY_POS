@@ -79,11 +79,15 @@ It includes methods to find locators, interact with the Rate Calculator page, su
 
 ## Postman Collection
 
-The project includes a Postman collection located in [postman-collection/POS_MY_COLLECTION.postman_collection.json](postman-collection/POS_MY_COLLECTION.postman_collection.json). 
+The project includes a Postman collection located in [postman-collection/POS_MY_COLLECTION.postman_collection.json](postman-collection/POS_MY_COLLECTION.postman_collection.json).
+
+
 This collection contains:
- 1. GET API request to get all countries, 
- 2. POST API request get state name by postcode.
- 3. POST API resquest to check prices by From postcode, ToPostcode, weight.
+  1. GET API request to get all countries, 
+  2. POST API request get state name by postcode.
+  3. POST API resquest to check prices by From postcode, ToPostcode, weight.
+
+Download and Import collection to the Postman client, Run the postman requests individually.
 
 ## Configuration
 
