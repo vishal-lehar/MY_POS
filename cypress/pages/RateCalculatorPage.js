@@ -43,6 +43,7 @@ class RateCalculatorPage {
   
     // Assertion - Ensure list of multiple prices visible under "Your Qoute"
     verifyShipmentOptions() {
+        cy.contains("Your Quote");
         cy.contains("Select a quote to start booking your shipment", {
             timeout: 5000,
         }).scrollIntoView().should("be.visible");
