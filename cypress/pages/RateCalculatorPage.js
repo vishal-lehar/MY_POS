@@ -33,12 +33,15 @@ class RateCalculatorPage {
   
     // Enter Weight value
     enterWeight(weight) {
-        cy.get('[formcontrolname="itemWeight"]').clear({ force: true }).type(weight);
+        cy.get('[formcontrolname="itemWeight"]')
+            .clear({ force: true })
+            .type(weight);
     }
   
     // Click calculate button
     clickCalculate() {
-        cy.contains("Calculate").click({ force: true });
+        cy.contains("Calculate")
+            .click({ force: true });
     }
   
     // Assertion - Ensure list of multiple prices visible under "Your Qoute"
@@ -48,7 +51,9 @@ class RateCalculatorPage {
             timeout: 5000,
         }).scrollIntoView().should("be.visible");
     
-        cy.get('a[href="https://send.pos.com.my/home?lg=en"]')
+        // cy.get('a[href="https://send.pos.com.my/home?lg=en"]')
+        cy.get('dt')
+            .contains('Service')
             .should('have.length.gte', 1);
     }
   }
